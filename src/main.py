@@ -3,10 +3,6 @@ from typing import Dict
 import hashlib
 from utils import setup_logger
 
-# Full list of restuarants and addreses present in any of the two files without dupes
-# Unique ID for each restaurant
-# Total number of occurencs of each entry
-# Two boolean flags indicating whether entry was present in file1 or file2
 
 # Tuple containing the source files and their relative paths
 # This is not the ideal way to ingest these files
@@ -17,8 +13,6 @@ logger = setup_logger(__name__)
 
 
 def main():
-    # Main entry point for execution
-
     # Step 1: Read the source files
     logger.info("Reading source files")
     source_data = read_source_files()
